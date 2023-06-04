@@ -45,7 +45,7 @@ namespace UnityEngine.XR.Content.Interaction
         JointLimits m_ClosedDoorLimits;
         bool m_Closed = false;
         float m_LastHandleValue = 1.0f;
-
+        [SerializeField]
         bool m_Locked = false;
 
         GameObject m_KeySocket;
