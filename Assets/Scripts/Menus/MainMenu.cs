@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace WhoToastedMrToaster
 {
@@ -7,6 +6,7 @@ namespace WhoToastedMrToaster
     {
         public GameObject quitButton = null;
         public GameObject quitModal = null;
+        public GameObject playButton = null;
 
         private void Awake()
         {
@@ -19,7 +19,14 @@ namespace WhoToastedMrToaster
 
         public void StartGame()
         {
-            SceneManager.LoadScene("MainScene");
+            SceneTransitionManager.singleton.GoToSceneAsync(1);
+        }
+
+        public void HideAll()
+        {
+            playButton.SetActive(false);
+            quitButton.SetActive(false);
+            quitModal.SetActive(false);
         }
 
         public void ShowQuit()
