@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5364478240129815008}
   - component: {fileID: 4976908481511423013}
   - component: {fileID: 8717411471284514058}
-  - component: {fileID: 4976908481511423018}
   - component: {fileID: 1487424656495550591}
   m_Layer: 28
   m_Name: Fork
@@ -110,7 +109,7 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4976908481511423018}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WhoToastedMrToaster.GameInteractable, Assembly-CSharp
         m_MethodName: Activate
         m_Mode: 1
@@ -215,19 +214,6 @@ MonoBehaviour:
   m_AddDefaultGrabTransformers: 1
   velocityThreshold: 2
   jumpAngleInDegree: 60
---- !u!114 &4976908481511423018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7813716252725247551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b52cb24347d3e54f96cdeee6047aca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animToActivate: {fileID: 0}
 --- !u!114 &1487424656495550591
 MonoBehaviour:
   m_ObjectHideFlags: 0

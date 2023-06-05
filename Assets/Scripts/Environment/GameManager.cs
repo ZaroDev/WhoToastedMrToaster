@@ -4,8 +4,10 @@ namespace WhoToastedMrToaster
 {
     public class GameManager : MonoBehaviour
     {
-        public int maxObjectives = 3;
+        public int maxObjectives = 4;
         public static GameManager singleton = null;
+
+        public GameObject finalAnim;
 
         public static Action OnCanFinishGame;
 
@@ -21,20 +23,25 @@ namespace WhoToastedMrToaster
                 Destroy(singleton);
 
             singleton = this;
+
+            finalAnim.SetActive(false);
         }
         // 0 Find the murder weapon
         // 1 Find the 1st memory
         // 2 Find the 2nd memory
         // 3 Find the 3rd memory
+
+        private void Update()
+        {
+            if (objectiveCount >= maxObjectives)
+            {
+                finalAnim.SetActive(true);
+            }
+        }
         public void UnlockNextObjective(int objective)
         {
-
-            if (objective != 3
-                || objectiveCount >= maxObjectives)
-            {
-                OnUnlockObjective?.Invoke(objective);
-                objectiveCount++;
-            }
+            OnUnlockObjective?.Invoke(objective);
+            objectiveCount++;
 
             CanFinishGame();
         }

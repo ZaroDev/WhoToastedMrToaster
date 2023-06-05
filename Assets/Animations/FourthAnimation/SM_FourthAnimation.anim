@@ -667,7 +667,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 10.55
+    m_StopTime: 11.016666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -2502,6 +2502,13 @@ AnimationClip:
   m_Events:
   - time: 1.8833333
     functionName: TakeFork
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 11.016666
+    functionName: Unlock
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
