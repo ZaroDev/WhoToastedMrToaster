@@ -746,7 +746,6 @@ GameObject:
   - component: {fileID: 9209610520977876088}
   - component: {fileID: 9209610520977876089}
   - component: {fileID: 9209610520977876090}
-  - component: {fileID: 4757354002274032300}
   m_Layer: 0
   m_Name: FourthAnimation
   m_TagString: Untagged
@@ -807,19 +806,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mikes_fork: {fileID: 9209610520267195635}
   kitchen_fork: {fileID: 9209610520793253721}
---- !u!114 &4757354002274032300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9209610520977876091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7bf682cdaaec9a4b89dfe6f5789ae42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectiveIndex: 0
 --- !u!1 &9209610521106735326
 GameObject:
   m_ObjectHideFlags: 0

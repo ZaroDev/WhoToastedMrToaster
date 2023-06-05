@@ -29,7 +29,7 @@ namespace WhoToastedMrToaster
         public void UnlockNextObjective(int objective)
         {
 
-            if (objective != maxObjectives
+            if (objective != 3
                 || objectiveCount >= maxObjectives)
             {
                 OnUnlockObjective?.Invoke(objective);
