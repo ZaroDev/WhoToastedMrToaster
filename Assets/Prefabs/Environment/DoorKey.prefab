@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2567042671315214137}
   - component: {fileID: 5207585129831231299}
   - component: {fileID: 2194387557793041942}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: DoorKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
