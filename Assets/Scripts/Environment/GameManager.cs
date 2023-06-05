@@ -4,7 +4,7 @@ namespace WhoToastedMrToaster
 {
     public class GameManager : MonoBehaviour
     {
-        public int maxObjectives = 4;
+        public int maxObjectives = 3;
         public static GameManager singleton = null;
 
         public static Action OnCanFinishGame;
@@ -28,8 +28,13 @@ namespace WhoToastedMrToaster
         // 3 Find the 3rd memory
         public void UnlockNextObjective(int objective)
         {
-            objectiveCount++;
-            OnUnlockObjective?.Invoke(objective);
+
+            if (objective != maxObjectives
+                || objectiveCount >= maxObjectives)
+            {
+                OnUnlockObjective?.Invoke(objective);
+                objectiveCount++;
+            }
 
             CanFinishGame();
         }
