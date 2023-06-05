@@ -10,7 +10,7 @@ namespace WhoToastedMrToaster
         public GameObject[] waypoints;
         public float duration = 1f;
         public event Action OnMovementComplete;
-        private int current = 0;
+        public int current { private set; get; } = 0;
 
         private Coroutine movementCoroutine;
         public void SetMovement(int index)

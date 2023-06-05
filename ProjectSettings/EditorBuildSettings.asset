@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 7a23e67f682108b4e9c987a3afa78714
+  - enabled: 1
+    path: Assets/Scenes/LoseFrank.unity
+    guid: e5a322894dd365041b11ef1866ce6d56
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 5b9e584305b3be9488d570d78045d7a3
+  - enabled: 1
+    path: Assets/Scenes/LoseBlake.unity
+    guid: 09f01702aa987644cb3ba0726b80594a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0f9f39ac2fdbdef4297120cab2dff03f,
       type: 2}
