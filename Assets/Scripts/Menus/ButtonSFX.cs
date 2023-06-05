@@ -13,7 +13,8 @@ namespace WhoToastedMrToaster
 
         private void Awake()
         {
-            source = GetComponent<AudioSource>();
+
+
         }
 
         public void OnClick()
