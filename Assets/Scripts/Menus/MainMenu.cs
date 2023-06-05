@@ -19,6 +19,7 @@ namespace WhoToastedMrToaster
 
         public void StartGame()
         {
+            HideAll();
             SceneTransitionManager.singleton.GoToSceneAsync(1);
         }
 
