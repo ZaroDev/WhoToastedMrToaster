@@ -4,9 +4,14 @@ namespace WhoToastedMrToaster
 {
     public class GameManager : MonoBehaviour
     {
+        public int maxObjectives = 4;
         private static GameManager singleton = null;
 
         public static Action OnCanFinishGame;
+
+        public static Action<int> OnUnlockObjective;
+
+        public int objectiveCount { private set; get; } = 0;
 
         public bool canFinish { private set; get; } = false;
         public bool win { private set; get; } = false;
@@ -17,6 +22,21 @@ namespace WhoToastedMrToaster
 
             singleton = this;
         }
+        // 0 Find the murder weapon
+        // 1 Find the 1st memory
+        // 2 Find the 2nd memory
+        // 3 Find the 3rd memory
+        public void UnlockNextObjective(int objective)
+        {
+            objectiveCount++;
+            OnUnlockObjective?.Invoke(objective);
+
+            if (objectiveCount >= maxObjectives)
+            {
+                FinishGame();
+            }
+        }
+
 
         public void FinishGame()
         {
