@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 816cd8b58b0c472429ea4fe83875ee15,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 01e5e7587dcfffb4ab7a4e5ace9ef207,
     type: 2}
 --- !u!196 &5
@@ -5096,7 +5097,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 813467565}
-  m_RootOrder: 467
+  m_RootOrder: 388
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &186016810
 MonoBehaviour:
@@ -8837,17 +8838,17 @@ PrefabInstance:
     - target: {fileID: 3227395999351752506, guid: 9172582d6d9f7904892d1df5ded54653,
         type: 3}
       propertyPath: m_fontColor.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3227395999351752506, guid: 9172582d6d9f7904892d1df5ded54653,
         type: 3}
       propertyPath: m_fontColor.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3227395999351752506, guid: 9172582d6d9f7904892d1df5ded54653,
         type: 3}
       propertyPath: m_fontColor.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3227395999351752506, guid: 9172582d6d9f7904892d1df5ded54653,
         type: 3}
@@ -8857,7 +8858,7 @@ PrefabInstance:
     - target: {fileID: 3227395999351752506, guid: 9172582d6d9f7904892d1df5ded54653,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190080
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9172582d6d9f7904892d1df5ded54653, type: 3}
@@ -25155,6 +25156,7 @@ Transform:
   - {fileID: 1502194780}
   - {fileID: 1114234691}
   - {fileID: 1701999771}
+  - {fileID: 186016809}
   - {fileID: 834869844}
   - {fileID: 1648981463}
   - {fileID: 300315063}
@@ -25234,7 +25236,6 @@ Transform:
   - {fileID: 2065157143}
   - {fileID: 1033665224}
   - {fileID: 1744533053}
-  - {fileID: 186016809}
   - {fileID: 297589692}
   - {fileID: 799878156}
   - {fileID: 1485850054}
