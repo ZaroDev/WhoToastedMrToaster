@@ -29,7 +29,6 @@ namespace WhoToastedMrToaster
 
         public void OnDeactivate()
         {
-
             warningMarker.SetActive(false);
         }
         public void OnActivate()

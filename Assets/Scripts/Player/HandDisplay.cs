@@ -1,22 +1,33 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace WhoToastedMrToaster
 {
     public class HandDisplay : MonoBehaviour
     {
-        void Start()
+        public List<Toggle> objectives = new List<Toggle>();
+
+        private void OnEnable()
         {
-        
+            GameManager.OnUnlockObjective += UnlockNextObjective;
+        }
+        private void OnDisable()
+        {
+            GameManager.OnUnlockObjective -= UnlockNextObjective;
         }
 
-        void Update()
+        public void Awake()
         {
-            if (true)
+            foreach (var objective in objectives)
             {
-
+                objective.isOn = false;
             }
+        }
+
+        public void UnlockNextObjective(int objective)
+        {
+            objectives[objective].isOn = true;
         }
     }
 }
