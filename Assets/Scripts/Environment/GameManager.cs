@@ -5,7 +5,7 @@ namespace WhoToastedMrToaster
     public class GameManager : MonoBehaviour
     {
         public int maxObjectives = 4;
-        private static GameManager singleton = null;
+        public static GameManager singleton = null;
 
         public static Action OnCanFinishGame;
 
