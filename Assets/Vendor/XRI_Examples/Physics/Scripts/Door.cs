@@ -139,14 +139,13 @@ namespace UnityEngine.XR.Content.Interaction
             m_KeySocket.SetActive(false);
             m_Key.transform.gameObject.SetActive(false);
             m_KeyKnob.SetActive(true);
-            m_Locked = false;
         }
 
         public void KeyUpdate(float keyValue)
         {
             if (!m_Locked && keyValue > m_KeyLockValue)
             {
-                m_Locked = false;
+                m_Locked = true;
                 m_OnLock.Invoke();
             }
 
