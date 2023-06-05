@@ -709,6 +709,7 @@ GameObject:
   - component: {fileID: 116707635498445564}
   - component: {fileID: 116707635498445506}
   - component: {fileID: 116707635498445565}
+  - component: {fileID: 3538311858565007548}
   m_Layer: 0
   m_Name: ThirdAnim
   m_TagString: Untagged
@@ -863,6 +864,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 116707634432402613}
   audioClip: {fileID: 8300000, guid: f0ecb2679c9d4f64f89646f1a4d7a829, type: 3}
+--- !u!114 &3538311858565007548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116707635498445566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bf682cdaaec9a4b89dfe6f5789ae42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveIndex: 2
 --- !u!1 &116707635500143378
 GameObject:
   m_ObjectHideFlags: 0
