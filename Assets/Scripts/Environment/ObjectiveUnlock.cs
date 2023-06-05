@@ -8,6 +8,7 @@ namespace WhoToastedMrToaster
         public void Unlock()
         {
             GameManager.singleton.UnlockNextObjective(objectiveIndex);
+            gameObject.SetActive(false);
         }
     }
 }
