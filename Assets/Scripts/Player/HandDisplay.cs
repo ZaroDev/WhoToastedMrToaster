@@ -30,6 +30,7 @@ namespace WhoToastedMrToaster
                 objective.isOn = false;
             }
         }
+#if UNITY_EDITOR
         int obj = 0;
         private void Update()
         {
@@ -38,6 +39,7 @@ namespace WhoToastedMrToaster
                 UnlockNextObjective(obj++);
             }
         }
+#endif
 
         public void UnlockNextObjective(int objective)
         {
