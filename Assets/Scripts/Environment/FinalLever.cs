@@ -29,7 +29,7 @@ namespace WhoToastedMrToaster
 
         public void OnDeactivate()
         {
-            warningMarker.SetActive(false);
+            warningMarker?.SetActive(false);
         }
         public void OnActivate()
         {
@@ -58,6 +58,10 @@ namespace WhoToastedMrToaster
                         break;
                 }
                 return;
+            }
+            else
+            {
+                warningMarker?.SetActive(true);
             }
 
         }

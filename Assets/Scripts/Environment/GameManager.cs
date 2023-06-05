@@ -31,14 +31,11 @@ namespace WhoToastedMrToaster
             objectiveCount++;
             OnUnlockObjective?.Invoke(objective);
 
-            if (objectiveCount >= maxObjectives)
-            {
-                FinishGame();
-            }
+            CanFinishGame();
         }
 
 
-        public void FinishGame()
+        public void CanFinishGame()
         {
             canFinish = true;
             OnCanFinishGame?.Invoke();
