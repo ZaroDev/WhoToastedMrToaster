@@ -2451,6 +2451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playButton: {fileID: 383806438715404136}
+  sceneIndex: 5
 --- !u!114 &7378701471787590178
 MonoBehaviour:
   m_ObjectHideFlags: 0

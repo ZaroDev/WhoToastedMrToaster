@@ -4,10 +4,10 @@ using WhoToastedMrToaster;
 public class EndMenu : MonoBehaviour
 {
     public GameObject playButton;
-
+    public int sceneIndex = 0;
     public void GoToMainMenu()
     {
-        SceneTransitionManager.singleton.GoToSceneAsync(0);
+        SceneTransitionManager.singleton.GoToSceneAsync(sceneIndex);
         playButton.SetActive(false);
     }
 }

@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseBlake.unity
     guid: 09f01702aa987644cb3ba0726b80594a
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 10513403609a79a4ab6cbdb9c0f0ba83
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0f9f39ac2fdbdef4297120cab2dff03f,
       type: 2}
