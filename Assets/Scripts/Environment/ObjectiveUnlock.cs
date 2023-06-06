@@ -7,15 +7,15 @@ namespace WhoToastedMrToaster
     {
         private Coroutine setIndex = null;
         public int objectiveIndex;
-        public bool activated = false;
+        public bool activateded = false;
         public bool canDisapear = true;
         private void Awake()
         {
-            activated = false;
+            activateded = false;
         }
         public void Unlock()
         {
-            if (activated)
+            if (activateded)
                 return;
 
             if (setIndex != null)
@@ -32,7 +32,7 @@ namespace WhoToastedMrToaster
             if (canDisapear)
                 gameObject.SetActive(false);
             setIndex = null;
-            activated = true;
+            activateded = true;
         }
     }
 }
